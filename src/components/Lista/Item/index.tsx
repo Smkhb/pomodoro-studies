@@ -8,7 +8,7 @@ interface Props extends IListaDeTarefas {
 export default function Item({ nome, tempo, selecionado, completado, id, selecionaTarefa }: Props) {
 
   return (
-    <li className={style.item} onClick={() => selecionaTarefa({
+    <li className={`${style.item} ${selecionado ? style.itemSelecionado : ''}`} onClick={() => selecionaTarefa({
       nome,
       tempo,
       selecionado,
