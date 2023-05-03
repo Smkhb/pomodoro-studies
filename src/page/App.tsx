@@ -22,7 +22,7 @@ export default function App() {
     <div className={style.AppStyle}>
         <Formulario setListaDeTarefas={setListaDeTarefas} />
         <Lista listaDeTarefas={listaDeTarefas} selecionaTarefa={selecionaTarefa} />    
-        <Cronometro />
+        <Cronometro selecionado={selecionado} />
     </div>
   )
 }
